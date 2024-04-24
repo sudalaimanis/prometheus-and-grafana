@@ -1,0 +1,15 @@
+
+
+sudo nano /etc/prometheus/prometheus.yml
+
+
+- job_name: 'Node_Exporter'
+
+    scrape_interval: 5s
+
+    static_configs:
+
+      - targets: ['13.232.55.141:9100']
+
+
+sudo systemctl restart prometheus
